@@ -1,7 +1,23 @@
 body {
+    width: 1440px;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #FFFFFF;
     font-family: 'Raleway', sans-serif;
+    color: #000000;
 }
 
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 61.09px;
+    height: 19px;
+}
 h1 {
     font-weight: 700;
     font-size: 22px;
