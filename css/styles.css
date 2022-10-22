@@ -1,11 +1,19 @@
+
 body {
-    width: 1440px;
-    height: 100%;
+    width: 1400px;
     margin-right: auto;
     margin-left: auto;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     font-family: 'Raleway', sans-serif;
     color: #000000;
+    font-size: 16px;
+}
+
+.logo{
+    width: 61.09px;
+    height: 19px;
+    margin-top: 44px;
+    margin-left: 55px;
 }
 
 nav{
@@ -14,21 +22,18 @@ nav{
     justify-content: space-between;
 }
 
-.logo{
-    width: 61.09px;
-    height: 19px;
+.menu_nav{
+    
+    width: 324px;
+    height: 67px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    list-style: none;
+    color: #ffffff;
+    background-color: #000000;
 }
-h1 {
-    font-weight: 700;
-    font-size: 22px;
-}
-
-h2 {
-    font-weight: 700;
-    font-size: 16px;
-}
-
-p {
-    font-weight: 400;
-    font-size: 16px;
+.elmt_nav{
+    margin: 0;
+    padding: 0;
 }
