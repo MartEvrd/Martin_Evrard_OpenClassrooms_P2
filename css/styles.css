@@ -1,32 +1,49 @@
+html{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0;
+}
+
 body {
-    width: 1400px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top:0;
+    margin: 0 auto;
+    padding-left: 50px;
+    padding-right: 50px;
     background-color: #ffffff;
     font-family: 'Raleway', sans-serif;
     color: #000000;
     font-size: 16px;
+    font-weight: 400;
 }
 
-nav{
+header nav{
+    height: 126px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+h1{
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+p{
+    margin:0;
 }
 
 #logo{
     width: 61.09px;
     height: 19px;
     margin-top: 44px;
-    margin-left: 55px;
+    margin-left: 5px;
 }
 
-.menu_nav{
+ul.menu_nav{
     width: 324px;
     height: 67px;
     padding: 0;
-    margin: 0px 77px 0px 0px;
+    margin: 2px 27px 0px 0px;
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
@@ -34,7 +51,7 @@ nav{
 }
 
 ul.menu_nav li a{
-    padding: 46px 24px 0px 24px;
+    padding: 48px 24px 0px 24px;
     color: #000000;
     text-decoration: none;
 }
@@ -43,4 +60,8 @@ ul.menu_nav li a:hover{
     font-weight: 500;
     color: #0065FC;
     border-top: 2px solid #0065FC;
+}
+
+.bloc_recherche{
+    display: flex;
 }
