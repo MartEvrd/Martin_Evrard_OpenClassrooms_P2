@@ -1,19 +1,12 @@
-
 body {
     width: 1400px;
     margin-right: auto;
     margin-left: auto;
+    margin-top:0;
     background-color: #ffffff;
     font-family: 'Raleway', sans-serif;
     color: #000000;
     font-size: 16px;
-}
-
-.logo{
-    width: 61.09px;
-    height: 19px;
-    margin-top: 44px;
-    margin-left: 55px;
 }
 
 nav{
@@ -22,18 +15,32 @@ nav{
     justify-content: space-between;
 }
 
+#logo{
+    width: 61.09px;
+    height: 19px;
+    margin-top: 44px;
+    margin-left: 55px;
+}
+
 .menu_nav{
-    
     width: 324px;
     height: 67px;
+    padding: 0;
+    margin: 0px 77px 0px 0px;
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
     list-style: none;
-    color: #ffffff;
-    background-color: #000000;
 }
-.elmt_nav{
-    margin: 0;
-    padding: 0;
+
+ul.menu_nav li a{
+    padding: 46px 24px 0px 24px;
+    color: #000000;
+    text-decoration: none;
+}
+
+ul.menu_nav li a:hover{
+    font-weight: 500;
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
 }
