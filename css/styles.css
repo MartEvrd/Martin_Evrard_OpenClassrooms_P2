@@ -22,6 +22,10 @@ header nav{
     justify-content: space-between;
 }
 
+main{
+    margin-left: 5px;
+}
+
 h1{
     margin-bottom: 8px;
     font-weight: 700;
@@ -63,5 +67,44 @@ ul.menu_nav li a:hover{
 }
 
 .bloc_recherche{
+    margin-top: 20px;
     display: flex;
+    width: 332px;
+    height: 49px;
+    border-radius: 15px;
+    background-color: #F2F2F2;
+}
+
+#location_searchbar{
+    width: 14px;
+    height: 18px;
+    padding: 16px 18px 15px 18px;
+}
+#city{
+    width: 282px;
+    height: 47px;
+    border: #F2F2F2 1px solid;
+    padding: 0px 118px 0px 16px;
+}
+
+#city::placeholder{
+    font-weight: 700;
+    font-size: 18px;
+    color: black;
+    opacity: 1;
+}
+
+#city:focus{
+    font-weight: 700;
+    font-size: 18px;
+    color: black;
+    opacity: 1;
+}
+
+div.bloc_recherche a{
+    width: 132px;
+    Height: 49px;
+    border-radius: 0px 15px 15px 0px;
+    background-color: #0065FC;
+
 }
