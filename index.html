@@ -27,6 +27,7 @@
             <ul class="menu_nav">
                 <li><a href="">Hébergements</a></li>
                 <li><a href="">Activités</a></li>
+                <!--ANCRES A RAJOUTER POUR RENVOYER SUR LES PARTIES DEDIEES-->
             </ul>
         </nav>
     </header>
@@ -36,11 +37,18 @@
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
 
-            <div class="bloc_recherche">
-                <i class="fa-solid fa-location-dot" id="location_searchbar"></i>
-                <input type="text" name="choosen_city" id="city" placeholder="Marseille, France">
-                <a href="">Rechercher</a>
+            <form methode ="post" action="" class="bloc_recherche">
+                <div class="searchbar">
+                    <i class="fa-solid fa-location-dot" id="location"></i>
+                    <input type="text" name="choosen_city" id="city" placeholder="Marseille, France">
+                </div>
+                    <input type="button" name="button_city" value="Rechercher" id="Recherche">
+            </form>
+            
+            <div class="filters">
+                
             </div>
+
         </section>
     </main>
 </body>

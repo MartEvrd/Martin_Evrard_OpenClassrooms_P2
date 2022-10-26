@@ -69,42 +69,55 @@ ul.menu_nav li a:hover{
 .bloc_recherche{
     margin-top: 20px;
     display: flex;
-    width: 332px;
-    height: 49px;
-    border-radius: 15px;
-    background-color: #F2F2F2;
+    justify-content: flex-start;
+    align-items: center;
+    height: 51px;
+    width: 418px;
 }
 
-#location_searchbar{
+.searchbar{
+    height: 49px;
+    display: flex;
+    align-items: center;
+    background-color: #F2F2F2;
+    border: #F2F2F2 1px solid;
+    border-right: none;
+    border-radius: 15px 0px 0px 15px;
+}
+
+#location{
     width: 14px;
     height: 18px;
-    padding: 16px 18px 15px 18px;
+    padding: 0px 17px 0px 18px;
 }
+
 #city{
-    width: 282px;
-    height: 47px;
-    border: #F2F2F2 1px solid;
-    padding: 0px 118px 0px 16px;
+    width: 220px;
+    height: 49px;
+    border: none;
+    padding: 0px 0px 0px 16px;
+    font-weight: 700;
+    font-size: 18px;
+    color: black;
 }
 
 #city::placeholder{
-    font-weight: 700;
-    font-size: 18px;
     color: black;
     opacity: 1;
 }
 
 #city:focus{
-    font-weight: 700;
-    font-size: 18px;
-    color: black;
-    opacity: 1;
+    outline: none;
 }
 
-div.bloc_recherche a{
+#Recherche{
     width: 132px;
-    Height: 49px;
+    Height: 51px;
     border-radius: 0px 15px 15px 0px;
     background-color: #0065FC;
-
+    border: #0065FC 1px solid;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
 }
