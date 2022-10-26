@@ -37,7 +37,7 @@
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
 
-            <form methode ="post" action="" class="bloc_recherche">
+            <form method ="post" action="" class="bloc_recherche">
                 <div class="searchbar">
                     <i class="fa-solid fa-location-dot" id="location"></i>
                     <input type="text" name="choosen_city" id="city" placeholder="Marseille, France">
@@ -46,26 +46,47 @@
             </form>
             
             <div class="filters_box">
-                <span id="filter_title">Filtres</span>
-                <div class="filters"> <!--filtre Economique-->
-                    <i class="fa-solid fa-money-bill-wave"></i>
+                <span id="filters_title">Filtres</span>
+                <!--filtre Economique-->
+                <div class="filters"> 
+                    <i class="fa-solid fa-money-bill-wave fa-fw"></i>
                     <span>Économique</span>
                 </div>
-                <div class="filters"> <!--filtre Familial-->
-                    <i class="fa-solid fa-person" id="specific_family"></i>
+                <!--filtre Familial-->
+                <div class="filters">
+                    <i class="fa-solid fa-person fa-fw" id="specific_family"></i>
                     <span>Familial</span>
                 </div>
-                <div class="filters"> <!--filtre Romantique-->
-                    <i class="fa-solid fa-heart"></i>
+                <!--filtre Romantique-->
+                <div class="filters">
+                    <i class="fa-solid fa-heart fa-fw"></i>
                     <span>Romantique</span>
                 </div>
-                <div class="filters"> <!--filtre Animaux-->
-                    <i class="fa-solid fa-dog"></i>
+                <!--filtre Animaux-->
+                <div class="filters">
+                    <i class="fa-solid fa-dog fa-fw"></i>
                     <span>Animaux autorisés</span>
                 </div>
             </div>
 
+            <div class="info_dispo">
+                <div class="info_dispo_icon">
+                    <i class="fa-solid fa-info fa-xs"></i>
+                </div>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
         </section>
+
+        <div class="bloc_hebergements">
+            <section class="hebergements">
+                <h2>Hébergements à Marseille</h2>
+            </section>
+
+            <section class="populaires">
+                <h2>Les plus populaires</h2>
+            </section>
+        </div>
+<p></p><br><br><br><br><br><br>
     </main>
 </body>
 </html>

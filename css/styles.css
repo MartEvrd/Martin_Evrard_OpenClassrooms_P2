@@ -1,9 +1,9 @@
+/*----- balises standards -----*/
 html{
     max-width: 1400px;
     margin: 0 auto;
     padding: 0;
 }
-
 body {
     margin: 0 auto;
     padding-left: 50px;
@@ -14,34 +14,30 @@ body {
     font-size: 16px;
     font-weight: 400;
 }
-
+h1{
+    margin-top: 0px;
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 22px;
+}
+h2{
+    margin: 0px 0px 25px 0px;
+    font-weight: 700;
+    font-size: 22px;
+}
+p{
+    margin:0;
+}
 header nav{
     height: 126px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+/*-------------------*/
 
-main{
-    margin-left: 5px;
-}
+/*----- Classes et héritages associés -----*/
 
-h1{
-    margin-bottom: 8px;
-    font-weight: 700;
-    font-size: 22px;
-}
-
-p{
-    margin:0;
-}
-
-#logo{
-    width: 61.09px;
-    height: 19px;
-    margin-top: 44px;
-    margin-left: 5px;
-}
 ul.menu_nav{
     width: 324px;
     height: 67px;
@@ -62,7 +58,8 @@ ul.menu_nav li a:hover{
     color: #0065FC;
     border-top: 2px solid #0065FC;
 }
-.bloc_recherche{
+
+form.bloc_recherche{
     margin-top: 20px;
     display: flex;
     justify-content: flex-start;
@@ -70,7 +67,7 @@ ul.menu_nav li a:hover{
     height: 51px;
     width: 418px;
 }
-.searchbar{
+form.bloc_recherche .searchbar{
     height: 49px;
     display: flex;
     align-items: center;
@@ -79,12 +76,12 @@ ul.menu_nav li a:hover{
     border-right: none;
     border-radius: 15px 0px 0px 15px;
 }
-#location{
+form.bloc_recherche .searchbar i{
     width: 14px;
     height: 18px;
     padding: 0px 17px 0px 18px;
 }
-#city{
+form.bloc_recherche .searchbar input{
     width: 220px;
     height: 49px;
     border: none;
@@ -93,12 +90,92 @@ ul.menu_nav li a:hover{
     font-size: 18px;
     color: black;
 }
-#city::placeholder{
+form.bloc_recherche .searchbar input::placeholder{
     color: black;
     opacity: 1;
 }
-#city:focus{
+form.bloc_recherche .searchbar input:focus{
     outline: none;
+}
+
+div.filters_box{
+    margin: 35px 460px 35px 0px;
+    height: 50px;
+    width: 874px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+div.filters{
+    height: 46px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: #D9D9D9 2px solid;
+    border-radius: 25px;
+    padding: 0px 18px 0px 18px;
+}
+div.filters i{
+    width: 22px;
+    color: #0065FC;
+    padding-right: 10px;
+}
+div.filters span{
+    font-weight: 700;
+    font-size: 17px;
+}
+div.filters:hover{
+    background-color: #DEEBFF;
+    cursor: pointer;
+}
+
+div.info_dispo{
+    margin: 35px 0px 40px 0px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+div.info_dispo_icon{
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #D9D9D9 1px solid;
+    color: #0065FC;
+    margin-right: 11px;
+}
+div.info_dispo_icon i{
+    padding-bottom: 2px;
+}
+
+div.bloc_hebergements{
+    display: flex;
+    justify-content: space-between;
+}
+div.bloc_hebergements section{
+    background-color: #F2F2F2;
+    border-radius: 20px;
+}
+
+.hebergements{
+    min-height: 625px;
+    width: 66%;
+    padding: 42px 40px 46px 40px;
+    margin-right: 40px;
+}
+
+.populaires{
+    min-height: 625px;
+    width: 33%;
+    padding: 42px 40px 35px 40px;
+}
+/*----- ID et héritages associés-----*/
+#logo{
+    width: 61.09px;
+    height: 19px;
+    margin-top: 44px;
 }
 #Recherche{
     width: 132px;
@@ -110,43 +187,9 @@ ul.menu_nav li a:hover{
     font-weight: 700;
     font-size: 18px;
     text-align: center;
-}
-
-.filters_box{
-    margin: 31px 464px 0px 7px;
-    height: 50px;
-    width: 874px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.filters{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border: #D9D9D9 2px solid;
-    border-radius: 25px;
-    padding: 14px 18px;
-}
-
-.filters i{
-    width: 100%px;
-    color: #0065FC;
-    padding-right: 10px;
-}
-
-.filters span{
-    font-weight: 700;
-    font-size: 17px;
-}
-
-.filters:hover{
-    background-color: #DEEBFF;
     cursor: pointer;
 }
-
-#filter_title{
+#filters_title{
     font-weight: 700;
     font-size: 18px;
 }
