@@ -42,7 +42,6 @@ p{
     margin-top: 44px;
     margin-left: 5px;
 }
-
 ul.menu_nav{
     width: 324px;
     height: 67px;
@@ -53,19 +52,16 @@ ul.menu_nav{
     align-items: flex-end;
     list-style: none;
 }
-
 ul.menu_nav li a{
     padding: 48px 24px 0px 24px;
     color: #000000;
     text-decoration: none;
 }
-
 ul.menu_nav li a:hover{
     font-weight: 500;
     color: #0065FC;
     border-top: 2px solid #0065FC;
 }
-
 .bloc_recherche{
     margin-top: 20px;
     display: flex;
@@ -74,7 +70,6 @@ ul.menu_nav li a:hover{
     height: 51px;
     width: 418px;
 }
-
 .searchbar{
     height: 49px;
     display: flex;
@@ -84,13 +79,11 @@ ul.menu_nav li a:hover{
     border-right: none;
     border-radius: 15px 0px 0px 15px;
 }
-
 #location{
     width: 14px;
     height: 18px;
     padding: 0px 17px 0px 18px;
 }
-
 #city{
     width: 220px;
     height: 49px;
@@ -100,16 +93,13 @@ ul.menu_nav li a:hover{
     font-size: 18px;
     color: black;
 }
-
 #city::placeholder{
     color: black;
     opacity: 1;
 }
-
 #city:focus{
     outline: none;
 }
-
 #Recherche{
     width: 132px;
     Height: 51px;
@@ -120,4 +110,43 @@ ul.menu_nav li a:hover{
     font-weight: 700;
     font-size: 18px;
     text-align: center;
+}
+
+.filters_box{
+    margin: 31px 464px 0px 7px;
+    height: 50px;
+    width: 874px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filters{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: #D9D9D9 2px solid;
+    border-radius: 25px;
+    padding: 14px 18px;
+}
+
+.filters i{
+    width: 100%px;
+    color: #0065FC;
+    padding-right: 10px;
+}
+
+.filters span{
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.filters:hover{
+    background-color: #DEEBFF;
+    cursor: pointer;
+}
+
+#filter_title{
+    font-weight: 700;
+    font-size: 18px;
 }
