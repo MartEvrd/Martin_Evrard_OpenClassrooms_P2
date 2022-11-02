@@ -37,12 +37,26 @@ a{
     color: #000000;
     text-decoration: none;
 }
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 header nav{
     height: 126px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+footer{
+    height: 225px;
+    background-color: #F2F2F2;
+    box-sizing: border-box;
+    padding: 45px 0px 0px 70px;
+    display: flex;
+    justify-content: flex-start;
+}
+
 /*-------------------*/
 
 /*----- Classes et héritages associés -----*/
@@ -50,12 +64,10 @@ header nav{
 ul.menu_nav{
     width: 324px;
     height: 67px;
-    padding: 0;
     margin: 2px 27px 0px 0px;
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
-    list-style: none;
 }
 ul.menu_nav li a{
     padding: 48px 24px 0px 24px;
@@ -161,6 +173,7 @@ div.bloc_logements{
     display: flex;
     justify-content: space-between;
     height: 625px;
+    margin-bottom: 60px;
 }
 div.bloc_logements section{
     background-color: #F2F2F2;
@@ -300,6 +313,54 @@ div.price p.euro{
     color: #F2F2F2;
 }
 
+section.bloc_activites{
+    margin-bottom: 60px;
+}
+section.bloc_activites h2{
+    margin-bottom: 20px;
+}
+div.activites_list{
+    display: flex;
+    justify-content: space-between;
+}
+.card_activites{
+    height: 445px;
+    width: 302px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+}
+.card_activites img{
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+    box-sizing: border-box;
+    height: 390px;
+    width: 100%;
+}
+.card_activites h3{
+    margin: auto 34px auto 19px;
+}
+.card_activites:hover{
+    cursor: pointer;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+}
+
+div.footer_bloc{
+    margin-right: 230px;
+}
+div.footer_bloc .footer_title{
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+div.footer_bloc ul li{
+    margin-bottom: 12px;
+}
+div.footer_bloc ul li:hover{
+    text-decoration: underline;
+}
 /*----- ID et héritages associés-----*/
 #logo{
     width: 61.09px;

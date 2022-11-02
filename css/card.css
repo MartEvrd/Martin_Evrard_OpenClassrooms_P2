@@ -6,62 +6,28 @@ body{
     padding-left: 40%;
     font-family: 'Raleway', sans-serif;
 }
-p{
-    margin:0;
-}
-div.card_populaire{
-    height: 144px;
-    width: 340px;
-    background-color: #FFFFFF;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-}
-div.card_populaire img{
-    object-fit: cover;
-    border-radius: 20px 0px 0px 20px;
-    border: 5px solid #FFFFFF;
-    box-sizing: border-box;
-    height: 100%;
-    max-width: 135px;
-}
-div.pop_content{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 16px 22px 12px 15px
-}
-div.pop_info{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-div.pop_content h3{
-    margin: 0px 0px 7px 0px; 
+h3{
+    margin: 0px 0px 0px 0px;
     font-weight: 700;
     font-size: 16px;
 }
-div.price_populaire{
+
+div.card_activites{
+    height: 445px;
+    width: 302px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    flex-direction: column;
 }
-div.price_populaire p{
-    font-weight: 400;
-    font-size: 14px;
+div.card_activites img{
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+    box-sizing: border-box;
+    height: 390px;
+    width: 100%;
 }
-div.card_populaire p.euro{
-    font-weight: 600;
-    font-size: 14px;
-}
-.rating{
-    display: flex;
-}
-.rating i{
-    margin-right: 2px;
-    color: #0065FC;
-}
-.rating i.empty_star{
-    color: #F2F2F2;
+
+div.card_activites h3{
+    margin: auto 34px auto 19px;
 }
