@@ -135,7 +135,6 @@ div.filters_boxes{
     column-gap: 30px;
     row-gap: 30px;
     flex-wrap: wrap;
-    
 }
 div.filters{
     height: 46px;
@@ -147,7 +146,6 @@ div.filters{
     padding: 0px 18px 0px 18px;
 }
 div.filters i{
-    width: 22px;
     color: #0065FC;
     padding-right: 10px;
 }
@@ -158,6 +156,9 @@ div.filters span{
 div.filters:hover{
     background-color: #DEEBFF;
     cursor: pointer;
+}
+i.mobile_icon{
+    display: none;
 }
 
 div.info_dispo{
@@ -188,15 +189,13 @@ div.bloc_logements{
     width: 100%;
     margin-bottom: 60px;
 }
-div.bloc_logements section{
-    background-color: #F2F2F2;
-    border-radius: 20px;
-}
 section.hebergements{
     box-sizing: border-box;
     min-height: 625px;
     width: calc(((100% / 3) * 2) - 20px);
     padding: 42px 40px 0px 40px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
 }
 section.hebergements h2{
     margin-bottom: 25px;
@@ -206,6 +205,8 @@ section.populaires{
     min-height: 625px;
     width: calc((100% / 3) - 20px);
     padding: 42px 40px 35px 40px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
 }
 
 div.hebergements_list{
@@ -242,7 +243,6 @@ div.hebergements_list{
 
 }
 .card_hebergement .hebergement_content{
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -282,7 +282,6 @@ div.populaires_title i{
 }
 div.populaires_list{
     min-height: 450px;
-    /* pourquoi les images réduisent quand on ajout le 'min' ? */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -351,7 +350,7 @@ section.bloc_activites{
     margin-bottom: 60px;
 }
 section.bloc_activites h2{
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 div.activites_list{
     display: flex;
@@ -402,7 +401,7 @@ div.footer_bloc ul li:hover{
     height: 19px;
     margin-top: 50px;
 }
-#recherche{
+#recherche_txt{
     width: 132px;
     Height: 51px;
     border-radius: 0px 15px 15px 0px;
@@ -412,6 +411,18 @@ div.footer_bloc ul li:hover{
     font-weight: 700;
     font-size: 18px;
     text-align: center;
+    cursor: pointer;
+}
+#recherche_icon{
+    width: auto;
+    Height: 51px;
+    border-radius: 0px 15px 15px 0px;
+    padding: 0px 14px;
+    background-color: #0065FC;
+    border: #0065FC 1px solid;
+    color: #ffffff;
+    text-align: center;
+    display: none;
     cursor: pointer;
 }
 #filters_title{
@@ -461,5 +472,184 @@ div.footer_bloc ul li:hover{
     footer{
         justify-content: space-between;
         padding: 35px 0px 15px 50px;
+    }
+}
+
+/*----- MOBILES - 320px -> 768px -----*/
+@media screen and (max-width: 768px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    header nav{
+        height: 130px;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+    #logo{
+        margin: 22px auto 50px;
+    }
+    ul.menu_nav{
+        width: 100%;
+        margin-top: 4px;
+    }
+    ul.menu_nav li{
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        border-bottom: 3px solid #F2F2F2;
+    }
+    ul.menu_nav li a{
+        padding: 0px 0px 23px;
+    }
+    ul.menu_nav li a:hover{
+        border: none;
+    }
+    ul.menu_nav li:hover{
+        font-weight: 500;
+        color: #0065FC;
+        border-bottom: 3px solid #0065FC;
+    }
+
+    .mobile_merge{
+        box-sizing: border-box;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    form.bloc_recherche{
+        width: 100%;
+    }
+    form.bloc_recherche .searchbar{
+        width: 100%;
+    }
+    form.bloc_recherche .searchbar input{
+        width: 100%;
+    }
+    #recherche_txt{
+        display: none;
+    }
+    #recherche_icon{
+        display: inline-flex;
+    }
+
+    div.filters_content{
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 15px;
+    }
+    div.filters_boxes{
+        row-gap: 15px;
+        column-gap: 0px;
+        justify-content: space-between;
+        width: 100%;
+    }
+    div.filters{
+        box-sizing: border-box;
+        justify-content: flex-start;
+        padding: 0px 15px;
+        width: calc(50% - 7px);
+    }
+    div.filters i{
+        width: 23px;
+        color: #0065FC;
+        padding-right: 0px;
+    }
+    div.filters span{
+        font-weight: 700;
+        font-size: 11px;
+    }
+    i.large_icon{
+        display: none;
+    }
+    i.mobile_icon{
+        display: inline;
+    }
+    div.info_dispo{
+        width: 100%;
+    }
+
+    div.bloc_logements{
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        row-gap: 0px;
+        margin-bottom: 0px;
+    }
+    div.bloc_logements section{
+        border-radius: 0px;
+    }
+
+    section.populaires{
+        box-sizing: border-box;
+        background-color: #F2F2F2;
+        width: 100%;
+        padding: 28px 20px 45px;
+    }
+    div.populaires_list{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        row-gap: 20px;  
+    }
+    .card_populaire{
+        min-height: 150px;
+        max-height: 150px;
+        width: 100%;
+
+    }
+
+    section.hebergements{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 28px 20px 45px;
+        background-color: #FFFFFF;
+    }
+    div.hebergements_list{
+        flex-direction: column;
+        justify-content: space-between;
+        row-gap: 20px;
+    }
+    .card_hebergement{
+        min-height: 210px;
+        max-height: 210px;
+        width: 100%;
+    }
+    .card_hebergement img{
+        min-height: 125px;
+        max-height: 125px;
+    }
+    div.load-more {
+        display: none;
+    }
+
+    section.bloc_activites{
+        box-sizing: border-box;
+        padding: 28px 20px 45px;
+        margin-bottom: 0px;
+        width: 100%;
+    }
+    div.activites_list{
+        flex-direction: column;
+        justify-content: space-between;
+        row-gap: 20px;
+    }
+    .card_activites{
+        height: 190px;
+        width: 100%;
+    }
+    .card_activites img{
+        height: 130px;
+    }
+
+    footer{
+        padding: 45px 0px 60px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        column-gap: 0px;
+        row-gap: 30px;
+    }
+    div.footer_bloc{
+        width: 100%;
     }
 }

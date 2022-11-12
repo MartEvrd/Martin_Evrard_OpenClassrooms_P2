@@ -34,7 +34,7 @@
 
     <main>
         <!--BLOC RECHERCHE & FILTRES-->
-        <section>
+        <section class="mobile_merge">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
 
@@ -43,7 +43,9 @@
                     <i class="fa-solid fa-location-dot" id="location"></i>
                     <input type="text" name="choosen_city" id="city" placeholder="Marseille, France">
                 </div>
-                    <input type="button" name="button_city" value="Rechercher" id="recherche">
+                    <input type="button" name="button_city_txt" value="Rechercher" id="recherche_txt">
+                    <input type="button" name="button_city_icon" value="&#xf002" id="recherche_icon" class="fa-solid fa-magnifying-glass fa-lg">
+
             </form>
             
             <div class="filters_content">
@@ -51,22 +53,26 @@
                 <div class="filters_boxes">
                     <!--filtre Economique-->
                     <div class="filters"> 
-                        <i class="fa-solid fa-money-bill-wave fa-lg"></i>
+                        <i class="fa-solid fa-money-bill-wave fa-lg large_icon"></i>
+                        <i class="fa-solid fa-money-bill-wave mobile_icon"></i>
                         <span>Économique</span>
                     </div>
                     <!--filtre Familial-->
                     <div class="filters">
-                        <i class="fa-solid fa-person fa-lg" id="specific_family"></i>
+                        <i class="fa-solid fa-person fa-lg large_icon"></i>
+                        <i class="fa-solid fa-person mobile_icon"></i>
                         <span>Familial</span>
                     </div>
                     <!--filtre Romantique-->
                     <div class="filters">
-                        <i class="fa-solid fa-heart fa-lg"></i>
+                        <i class="fa-solid fa-heart fa-lg large_icon"></i>
+                        <i class="fa-solid fa-heart mobile_icon"></i>
                         <span>Romantique</span>
                     </div>
                     <!--filtre Animaux-->
                     <div class="filters">
-                        <i class="fa-solid fa-dog fa-lg"></i>
+                        <i class="fa-solid fa-dog fa-lg large_icon"></i>
+                        <i class="fa-solid fa-dog mobile_icon"></i>
                         <span>Animaux autorisés</span>
                     </div>
                 </div>
@@ -81,7 +87,7 @@
         </section>
 
         <!--BLOC HEBERGEMENTS-->
-        <div class="bloc_logements" id="rep_logements" >
+        <div class="bloc_logements">
             <!-- Section HEBERGEMENTS-->
             <section class="hebergements">
                 <h2>Hébergements à Marseille</h2>
