@@ -640,6 +640,9 @@ div.footer_bloc ul li:hover{
     .card_activites img{
         height: 130px;
     }
+    .card_activites:hover{
+        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+    }
 
     footer{
         padding: 45px 0px 60px 30px;
