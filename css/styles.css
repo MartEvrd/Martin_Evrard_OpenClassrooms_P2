@@ -93,7 +93,8 @@ form.bloc_recherche{
     width: 418px;
 }
 form.bloc_recherche .searchbar{
-    height: 49px;
+    height: 51px;
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     background-color: #F2F2F2;
@@ -248,6 +249,8 @@ div.hebergements_list{
     justify-content: space-between;
     box-sizing: border-box;
     padding: 4px 16px 11px;
+    min-height: 115px;
+    max-height: 115px;
 }
 .card_hebergement:hover{
     cursor: pointer;
@@ -481,6 +484,10 @@ div.footer_bloc ul li:hover{
         margin: 0;
         padding: 0;
     }
+    input[type="text"], input[type="button"] { 
+        -webkit-appearance: none; 
+        -webkit-border-radius: 0;
+    }
     header nav{
         height: 130px;
         flex-direction: column;
@@ -511,6 +518,11 @@ div.footer_bloc ul li:hover{
         color: #0065FC;
         border-bottom: 3px solid #0065FC;
     }
+    /* ul.menu_nav li:active{
+        font-weight: 500;
+        color: #0065FC;
+        border-bottom: 3px solid #0065FC;
+    } */
 
     .mobile_merge{
         box-sizing: border-box;
@@ -522,15 +534,18 @@ div.footer_bloc ul li:hover{
     }
     form.bloc_recherche .searchbar{
         width: 100%;
+        border-radius: 15px 0px 0px 15px;
     }
     form.bloc_recherche .searchbar input{
         width: 100%;
+
     }
     #recherche_txt{
         display: none;
     }
     #recherche_icon{
         display: inline-flex;
+        margin-left: 0;
     }
 
     div.filters_content{
@@ -597,6 +612,9 @@ div.footer_bloc ul li:hover{
         width: 100%;
 
     }
+    /* .card_populaire:hover{
+        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+    } */
 
     section.hebergements{
         box-sizing: border-box;
@@ -618,6 +636,13 @@ div.footer_bloc ul li:hover{
         min-height: 125px;
         max-height: 125px;
     }
+    .card_hebergement .hebergement_content{
+        min-height: 85px;
+        max-height: 85px;
+    }
+    /* .card_hebergement:hover{
+        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+    } */
     div.load-more {
         display: none;
     }
@@ -640,9 +665,9 @@ div.footer_bloc ul li:hover{
     .card_activites img{
         height: 130px;
     }
-    .card_activites:hover{
+    /* .card_activites:hover{
         box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
-    }
+    } */
 
     footer{
         padding: 45px 0px 60px 30px;
