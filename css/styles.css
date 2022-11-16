@@ -521,12 +521,7 @@ div.footer_bloc ul li:hover{
         color: #0065FC;
         border-bottom: 3px solid #0065FC;
     }
-    /* ul.menu_nav li:active{
-        font-weight: 500;
-        color: #0065FC;
-        border-bottom: 3px solid #0065FC;
-    } */
-
+ 
     .mobile_merge{
         box-sizing: border-box;
         padding-left: 20px;
@@ -615,9 +610,6 @@ div.footer_bloc ul li:hover{
         width: 100%;
 
     }
-    /* .card_populaire:hover{
-        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
-    } */
 
     section.hebergements{
         box-sizing: border-box;
@@ -643,9 +635,6 @@ div.footer_bloc ul li:hover{
         min-height: 85px;
         max-height: 85px;
     }
-    /* .card_hebergement:hover{
-        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
-    } */
     div.load-more {
         display: none;
     }
@@ -668,9 +657,6 @@ div.footer_bloc ul li:hover{
     .card_activites img{
         height: 130px;
     }
-    /* .card_activites:hover{
-        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
-    } */
 
     footer{
         padding: 45px 0px 60px 30px;
